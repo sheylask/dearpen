@@ -1,46 +1,57 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Venta</title>
-        <link rel="stylesheet" href="inicio.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    </head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Venta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
 
-    
+<body>
+
+    <!-- Menú de navegación fijo -->
     <header class="menu-fijo">
         <ul class="menu">
-            <li><a href="inicio.html">Inicio</a></li>
-            <li><a href="tabla_pizza.html">Lapiceros</a></li>
-            <li><a href="https://www.tiktok.com/@dearpen1?_t=ZS-8xLX4oiHDQF&_r=1" target="_blank"><i class="bi bi-cart"></i> Compre Aqui</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Lapiceros</a></li>
+            <li><a href="https://www.tiktok.com/@dearpen1?_t=ZS-8xLX4oiHDQF&_r=1" target="_blank">
+                <i class="bi bi-cart"></i> Compre Aquí
+            </a></li>
         </ul>
     </header>
 
-    
-    <!--videito-->
+    <!-- Video de fondo -->
     <video autoplay loop muted id="video">
-        <source src="videos/pizza.mp4" type="video/mp4"> no hay video
+        <source src="videos/pizza.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
     </video>
 
-       <!-- Sección de Encabezado -->
-       <section class="encabezado">
+    <!-- Encabezado -->
+    <section class="encabezado">
         <h1>Lapiceros Dear Pen</h1>
-        <p>¡¡Lapiceros personalizados a tu alcance!!</p>
-        <img src="fotos/portada.png" id="portada">
+        <p>¡Lapiceros personalizados a tu alcance!</p>
+        <img src="fotos/portada.png" id="portada" alt="Portada de Dear Pen">
     </section>
+
+    <!-- Sección Sobre Nosotros -->
     <section class="sobre-nosotros">
         <h2>Sobre Nosotros</h2>
-        <p>Bienvenidos a la tienda de lapiceros de moda en el pais  "Dear Pen". Aqui encontraras el mejor lapicero que puedas imaginar.</p>
+        <p>Bienvenidos a la tienda de lapiceros de moda en el país "Dear Pen". Aquí encontrarás el mejor lapicero que puedas imaginar.</p>
         <div class="imagenes-pizzas">
             <img src="fotos/local.jpg" alt="Local">
-            <img src="fotos/pizza.jpg" alt="Pizza">
-            <img src="fotos/vino.jpg" alt="Vino">
-            <img src="fotos/pastas.jpg" alt="pasta">
+            <img src="fotos/pizza.jpg" alt="Lapicero modelo 1">
+            <img src="fotos/vino.jpg" alt="Lapicero modelo 2">
+            <img src="fotos/pastas.jpg" alt="Lapicero modelo 3">
         </div>
-    <!-- Icono de WhatsApp -->
+    </section>
+
+    <!-- Icono flotante de WhatsApp -->
     <a href="https://wa.me/+51930645770" target="_blank" class="icono-whatsapp">
         <img src="fotos/whatsapp.png" alt="WhatsApp">
     </a>
+
 </body>
-    
 </html>
