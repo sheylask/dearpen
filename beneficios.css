@@ -1,0 +1,230 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffeaea;
+  color: #2c2c2c;
+  padding-top: 120px;
+}
+
+/* Menú fijo */
+.menu-fijo {
+  background-color: #0c0c0cb2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 20px 20px;
+}
+
+.menu-fijo .menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.menu-fijo .menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 18px;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.menu-fijo .menu li a:hover {
+  background-color: #f8b8a0;
+  color: #000;
+  transform: scale(1.1);
+}
+
+/* Contenido principal */
+.contenedor-beneficios {
+  max-width: 1100px;
+  margin: 40px auto 80px;
+  padding: 60px 40px;
+  background-color: #fff6f3;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.titulo-beneficios {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.lista-beneficios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.beneficio {
+  background-color: #ffe0db;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.beneficio:hover {
+  transform: translateY(-5px);
+}
+
+.beneficio .icono {
+  font-size: 36px;
+  color: #d1554c;
+  margin-bottom: 15px;
+}
+
+.beneficio h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.beneficio p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* WhatsApp flotante */
+.icono-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.icono-whatsapp img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.pie-pagina {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 40px 20px 20px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.info-footer {
+  flex: 1 1 300px;
+  text-align: left;
+}
+
+.dearpen-logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 36px;
+  color: #ffc7bf;
+  margin-bottom: 10px;
+}
+
+.info-footer p {
+  font-size: 16px;
+  margin: 4px 0;
+  color: white;
+}
+
+.info-footer i {
+  margin-right: 8px;
+}
+
+.redes-footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1 1 200px;
+  justify-content: center;
+}
+
+.redes-footer a {
+  color: white;
+  font-size: 28px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redes-footer a:hover {
+  transform: scale(1.2);
+  color: #ffc7bf;
+}
+
+.copy {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+/* Animación */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .menu-fijo .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .lista-beneficios {
+    grid-template-columns: 1fr;
+  }
+
+  .contenedor-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-footer {
+    text-align: center;
+  }
+
+  .titulo-beneficios {
+    font-size: 2.4rem;
+  }
+
+  .beneficio h2 {
+    font-size: 1.4rem;
+  }
+}
