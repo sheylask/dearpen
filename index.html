@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Venta</title>
+    <title>Dearpen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="inicio.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -12,14 +12,14 @@
 
 <body>
 
-    <!-- Menú de navegación fijo -->
+    <!-- Menú fijo -->
     <header class="menu-fijo">
         <ul class="menu">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="productos.html">Lapiceros</a></li>
-            <li><a href="https://www.tiktok.com/@dearpen1?_t=ZS-8xLX4oiHDQF&_r=1" target="_blank">
-                <i class="bi bi-cart"></i> Compre Aquí
-            </a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="beneficios.html">Beneficios</a></li>
+            <li><a href="https://www.tiktok.com/@dearpen1" target="_blank"><i class="bi bi-cart"></i> Compre Aquí</a></li>
         </ul>
     </header>
 
@@ -30,28 +30,53 @@
     </video>
 
     <!-- Encabezado -->
-    <section class="encabezado">
+    <section class="encabezado fade-in">
         <h1>Lapiceros Dear Pen</h1>
         <p>¡Lapiceros personalizados a tu alcance!</p>
         <img src="fotos/portada.png" id="portada" alt="Portada de Dear Pen">
     </section>
 
-    <!-- Sección Sobre Nosotros -->
-    <section class="sobre-nosotros">
-        <h2>Sobre Nosotros</h2>
-        <p>Bienvenidos a la tienda de lapiceros de moda en el país "Dear Pen". Aquí encontrarás el mejor lapicero que puedas imaginar.</p>
-        <div class="imagenes-pizzas">
-            <img src="fotos/local.jpg" alt="Local">
-            <img src="fotos/pizza.jpg" alt="Lapicero modelo 1">
-            <img src="fotos/vino.jpg" alt="Lapicero modelo 2">
-            <img src="fotos/pastas.jpg" alt="Lapicero modelo 3">
+    <!-- Galería / Carrusel -->
+    <section class="galeria-productos fade-in">
+        <h2>Galería de Modelos</h2>
+        <div class="carrusel-contenedor">
+            <div class="carrusel-scroll">
+                <img src="fotos/local.jpg" alt="Local">
+                <img src="fotos/pizza.jpg" alt="Modelo 1">
+                <img src="fotos/vino.jpg" alt="Modelo 2">
+                <img src="fotos/pastas.jpg" alt="Modelo 3">
+                <img src="fotos/1.jpg" alt="Modelo 4">
+                <img src="fotos/2.jpg" alt="Modelo 5">
+                <img src="fotos/3.jpg" alt="Modelo 6">
+                <img src="fotos/4.jpg" alt="Modelo 7">
+            </div>
         </div>
     </section>
 
-    <!-- Icono flotante de WhatsApp -->
+    <!-- Icono WhatsApp -->
     <a href="https://wa.me/+51930645770" target="_blank" class="icono-whatsapp">
         <img src="fotos/whatsapp.png" alt="WhatsApp">
     </a>
+
+    <!-- Footer unificado -->
+<footer class="pie-pagina">
+    <div class="contenedor-footer">
+        <div class="info-footer">
+            <h3 class="dearpen-logo">Dear Pen</h3>
+            <p>Lapiceros personalizados con estilo y elegancia.</p>
+            <p><i class="bi bi-geo-alt-fill"></i> Callao Ventanilla, Perú</p>
+            <p><i class="bi bi-telephone-fill"></i> +51 930 645 770</p>
+        </div>
+        <div class="redes-footer">
+            <a href="https://www.tiktok.com/@dearpen1" target="_blank"><i class="bi bi-tiktok"></i></a>
+            <a href="https://wa.me/51930645770" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </div>
+    </div>
+    <div class="copy">
+        <p>&copy; 2025 <span>Dear Pen</span>. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
 
 </body>
 </html>
