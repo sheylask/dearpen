@@ -72,13 +72,18 @@ body {
     color: #4a4a4a;
 }
 
+.encabezado p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
 #portada {
     width: 300px;
     border-radius: 50%;
     margin-top: 20px;
 }
 
-/* Galería de productos (carrusel horizontal sin JS) */
+/* Galería de productos */
 .galeria-productos {
     padding: 60px 20px;
     text-align: center;
@@ -209,22 +214,79 @@ body {
 
 /* Responsive */
 @media screen and (max-width: 768px) {
-    .menu-fijo .menu {
-        flex-direction: column;
-        gap: 10px;
+
+    body {
+        font-size: 15px;
     }
 
-    .carrusel-scroll img {
-        width: 90%;
-        height: auto;
+    .menu-fijo {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .menu-fijo .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .menu-fijo .menu li a {
+        font-size: 16px;
+        padding: 10px 14px;
+    }
+
+    .encabezado {
+        padding: 80px 10px 40px;
+    }
+
+    .encabezado h1 {
+        font-size: 2.8rem;
+    }
+
+    .encabezado p {
+        font-size: 1rem;
     }
 
     #portada {
-        width: 80%;
+        width: 75%;
+        margin: 20px auto 0;
+        display: block;
+    }
+
+    .galeria-productos {
+        padding: 40px 10px;
+    }
+
+    .carrusel-contenedor {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .carrusel-scroll {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .carrusel-scroll img {
+        width: 250px;
+        height: auto;
     }
 
     .contenedor-footer {
-        flex-direction: column;
-        align-items: center;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .redes-footer {
+        gap: 16px;
+    }
+
+    .info-footer p {
+        font-size: 14px;
+    }
+
+    .dearpen-logo {
+        font-size: 28px;
     }
 }
