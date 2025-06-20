@@ -1,87 +1,217 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Dearpen - Beneficios</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="beneficios.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-</head>
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<body>
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e6dddd;
+    color: #0f0f0f;
+    font-size: 18px;
+    padding-top: 100px;
+    line-height: 1.6;
+}
 
-  <!-- Menú fijo -->
-    <header class="menu-fijo">
-        <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="productos.html">Lapiceros</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="beneficios.html">Beneficios</a></li>
-            <li><a href="https://www.tiktok.com/@dearpen1" target="_blank"><i class="bi bi-cart"></i> Compre Aquí</a></li>
-        </ul>
-    </header>
-  <!-- Sección Beneficios -->
-  <main class="contenedor-beneficios fade-in">
-    <h1 class="titulo-beneficios">¿Por qué elegir Dearpen?</h1>
-    <div class="lista-beneficios">
-      <div class="beneficio">
-        <div class="icono"><i class="bi bi-cash-coin"></i></div>
-        <h2>Precios Accesibles</h2>
-        <p>Disfruta de productos de calidad sin pagar de más. Ideal para estudiantes y familias.</p>
-      </div>
-      <div class="beneficio">
-        <div class="icono"><i class="bi bi-globe2"></i></div>
-        <h2>Ecoamigables</h2>
-        <p>Fabricados con materiales sostenibles y opciones reciclables para cuidar el planeta.</p>
-      </div>
-      <div class="beneficio">
-        <div class="icono"><i class="bi bi-brush"></i></div>
-        <h2>Personalización Gratuita</h2>
-        <p>Crea tu propio diseño sin cargos extra: nombres, frases o colores a tu gusto.</p>
-      </div>
-      <div class="beneficio">
-        <div class="icono"><i class="bi bi-truck"></i></div>
-        <h2>Entrega Local Rápida</h2>
-        <p>Recibe tu pedido en Ventanilla y alrededores en tiempo récord.</p>
-      </div>
-      <div class="beneficio">
-        <div class="icono"><i class="bi bi-mortarboard"></i></div>
-        <h2>Apoyo a Estudiantes</h2>
-        <p>Tu compra impulsa un proyecto de jóvenes emprendedores del Colegio Coprodeli San Juan Macías.</p>
-      </div>
-      <div class="beneficio">
-        <div class="icono"><i class="bi bi-chat-dots"></i></div>
-        <h2>Atención Personalizada</h2>
-        <p>Estamos disponibles para resolver tus dudas y ayudarte a elegir el mejor producto para ti.</p>
-      </div>
-    </div>
-  </main>
+/* Menú fijo */
+.menu-fijo {
+    background-color: #0c0c0cb2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
 
-  <!-- Icono WhatsApp -->
-  <a href="https://wa.me/51930645770" target="_blank" class="icono-whatsapp">
-    <img src="fotos/whatsapp.png" alt="WhatsApp">
-  </a>
+.menu-fijo .menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
 
-  <!-- Footer -->
-  <footer class="pie-pagina">
-    <div class="contenedor-footer">
-      <div class="info-footer">
-        <h3 class="dearpen-logo">Dear Pen</h3>
-        <p>Lapiceros personalizados con estilo y elegancia.</p>
-        <p><i class="bi bi-geo-alt-fill"></i> Callao Ventanilla, Perú</p>
-        <p><i class="bi bi-telephone-fill"></i> +51 930 645 770</p>
-      </div>
-      <div class="redes-footer">
-        <a href="https://www.tiktok.com/@dearpen1" target="_blank"><i class="bi bi-tiktok"></i></a>
-        <a href="https://wa.me/51930645770" target="_blank"><i class="bi bi-whatsapp"></i></a>
-      </div>
-    </div>
-    <div class="copy">
-      <p>&copy; 2025 <span>Dear Pen</span>. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+.menu-fijo .menu li a {
+    color: white;
+    text-decoration: none !important; /* Elimina subrayado en todos los enlaces del menú */
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
 
-</body>
-</html>
+.menu-fijo .menu li a:hover {
+    background-color: #ffc7bfb2;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+/* Contenido principal */
+.contenedor-historia {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.tarjeta-biografia {
+    max-width: 1000px;
+    background-color: #ffffffd5;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.foto-fundador {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.titulo-fundador {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #d34b34;
+    margin-bottom: 10px;
+}
+
+.subtitulo-fundador {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.texto-biografia {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* WhatsApp */
+.icono-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.icono-whatsapp img {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer moderno */
+.pie-pagina {
+    background-color: #0a0a0a;
+    color: white;
+    padding: 40px 20px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.info-footer h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    color: #ffc7bf;
+    margin-bottom: 10px;
+}
+
+.info-footer p {
+    font-size: 16px;
+    margin: 4px 0;
+    color: white;
+}
+
+.redes-footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes-footer a {
+    color: white;
+    font-size: 28px;
+    transition: transform 0.3s ease;
+    text-decoration: none !important; /* Protección adicional contra subrayado */
+}
+
+.redes-footer a:hover {
+    transform: scale(1.2);
+    color: #ffc7bf;
+}
+
+.copy {
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    color: #aaa;
+}
+
+/* Animación */
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .menu-fijo .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tarjeta-biografia {
+        padding: 20px;
+    }
+
+    .foto-fundador {
+        width: 160px;
+        height: 160px;
+    }
+
+    .titulo-fundador {
+        font-size: 2.2rem;
+    }
+
+    .subtitulo-fundador {
+        font-size: 1rem;
+    }
+
+    .texto-biografia {
+        font-size: 0.95rem;
+    }
+
+    .contenedor-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
